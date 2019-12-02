@@ -1,0 +1,31 @@
+.gridGallery {
+    max-height: 1000px;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+.gridGallery > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.gridGallery > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridGallery .horizontal {
+    grid-column: span 2;
+
+}
+.gridGallery .vertical {
+    grid-row: span 2;
+}
+.gridGallery .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
