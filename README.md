@@ -1,2 +1,2 @@
 # gridGallery
-A template for grid gallery
+A template for responsive grid gallery
